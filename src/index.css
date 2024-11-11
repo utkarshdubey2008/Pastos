@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+/* Prism.js theme overrides for dark mode */
+.dark pre[class*="language-"],
+.dark code[class*="language-"] {
+  @apply bg-gray-900 text-gray-100;
+}
+
+.dark :not(pre) > code[class*="language-"],
+.dark pre[class*="language-"] {
+  @apply bg-gray-900;
+}
